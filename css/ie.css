@@ -1,0 +1,34 @@
+/* ------------------------------------------
+  OLD IE STYLES
+--------------------------------------------- */
+
+.js .nav-collapse {
+  position: relative;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-collapse {
+  float: right;
+  width: auto;
+}
+
+.nav-collapse li {
+  width: auto;
+}
+
+.nav-collapse a {
+  border-left: 1px solid white;
+  padding: 1.02em 2em;
+  text-align: center;
+  border-top: 0;
+  float: left;
+  width: auto;
+  margin: 0;
+}
+
+.nav-collapse .active a {
+  background: transparent;
+}
