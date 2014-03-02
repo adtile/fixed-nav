@@ -4,7 +4,7 @@
 
 You are free to use the JavaScript, styles and the icon fonts provided here in your own project. Commercial or non-commercial.
 
-To view the source code, open up [fixed-responsive-nav.js](http://sdfsdf.com) located under the "js" folder. The file should be pretty well commented out to explain what’s happening on each line. If you have any questions or problems, [tweet to us](http://twitter.com/adtileHQ)! This project is built using progressive enhancement and tested to be working on Internet Explorer 6 and up.
+To view the source code, open up [fixed-responsive-nav.js](https://github.com/adtile/fixed-nav/blob/master/js/fixed-responsive-nav.js) located under the "js" folder. The file should be pretty well commented out to explain what’s happening on each line. If you have any questions or problems, [tweet to us](http://twitter.com/adtileHQ)! This project is built using progressive enhancement and tested to be working on Internet Explorer 6 and up.
 
 # Features
 
@@ -21,7 +21,7 @@ To view the source code, open up [fixed-responsive-nav.js](http://sdfsdf.com) lo
 
 # Working on the project
 
-Doesn’t require any setting up, just clone the repository and open [index.html](https://fjiofjdoi.com/) in your favorite browser. If you are using OS X, you can start a server from your command line using the following command, and then view the page at [http://localhost:8000](http://localhost:8000):
+Doesn’t require any setting up, just clone the repository and open [index.html](https://github.com/adtile/fixed-nav/blob/master/index.html) in your favorite browser. If you are using OS X, you can start a server from your command line using the following command, and then view the page at [http://localhost:8000](http://localhost:8000):
 
 ```sh
 python -m SimpleHTTPServer 8000
