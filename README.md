@@ -19,6 +19,11 @@ To view the source code, open up [fixed-responsive-nav.js](https://github.com/ad
 * Tapping a link changes the URL, so you can still copy/paste it and link to different sections
 * Built progressive enhancement in mind
 
+# Live example
+
+* There’s a live example here, take a look: [http://www.adtile.me/fixed-nav/](http://www.adtile.me/fixed-nav/)
+* Alternatively, you can also try the navigation [on our site](http://www.adtile.me/) which uses similar approach
+
 # Working on the project
 
 Doesn’t require any setting up, just clone the repository and open [index.html](https://github.com/adtile/fixed-nav/blob/master/index.html) in your favorite browser. If you are using OS X, you can start a server from your command line using the following command, and then view the page at [http://localhost:8000](http://localhost:8000):
