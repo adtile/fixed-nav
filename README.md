@@ -2,9 +2,9 @@
 
 ### Responsive, fixed and touch friendly one page navigation, using [Responsive Nav](http://responsive-nav.com/), smooth animated scrolling & vanilla JavaScript. Similar to the solution we are using on [Adtile’s site](http://www.adtile.me/).
 
-You are free to use the JavaScript, styles and the icon fonts provided here in your own project. Commercial or non-commercial.
+To see the source code, open up [fixed-responsive-nav.js](https://github.com/adtile/fixed-nav/blob/master/js/fixed-responsive-nav.js) located under the "js" folder. The file should be pretty well commented out to explain what’s happening on each line. If you have any questions or problems, [tweet to us](http://twitter.com/adtileHQ)! This project is built using progressive enhancement and tested to be working on Internet Explorer 6 and up.
 
-To view the source code, open up [fixed-responsive-nav.js](https://github.com/adtile/fixed-nav/blob/master/js/fixed-responsive-nav.js) located under the "js" folder. The file should be pretty well commented out to explain what’s happening on each line. If you have any questions or problems, [tweet to us](http://twitter.com/adtileHQ)! This project is built using progressive enhancement and tested to be working on Internet Explorer 6 and up.
+You are free to use the JavaScript, styles and the icon fonts provided here in your own project. Commercial or non-commercial.
 
 # Features
 
