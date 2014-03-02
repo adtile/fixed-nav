@@ -125,6 +125,11 @@
     // When a navigation item is tapped, select it and begin scrolling
     [].forEach.call(links, function (el, i) {
       links[i].addEventListener("click", function (e) {
+
+        // Prevent default functionality
+        e.preventDefault();
+
+        // Navigation was tapped, set flag to true
         wasNavigationTapped = true;
 
         // Select right navigation item (we are passing which one to select "i")
