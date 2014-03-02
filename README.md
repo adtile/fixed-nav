@@ -1,6 +1,6 @@
 # Fixed Responsive Nav
 
-### Fixed positioned, touch friendly one page responsive navigation, using [Responsive Nav](http://responsive-nav.com/), smooth animated scrolling & Vanilla JavaScript. Similar to the solution we are using on [Adtile’s site](http://www.adtile.me/).
+### Responsive, fixed and touch friendly one page navigation, using [Responsive Nav](http://responsive-nav.com/), smooth animated scrolling & Vanilla JavaScript. Similar to the solution we are using on [Adtile’s site](http://www.adtile.me/).
 
 You are free to use the JavaScript, styles and the icon fonts provided here in your own project. Commercial or non-commercial.
 
