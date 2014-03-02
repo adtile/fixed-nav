@@ -13,7 +13,7 @@
   var responsiveNav = function (el, options) {
 
     var computed = !!window.getComputedStyle;
-    
+
     // getComputedStyle polyfill
     if (!computed) {
       window.getComputedStyle = function(el) {
@@ -63,7 +63,7 @@
           }
         }
       },
-    
+
       removeEvent = function (el, evt, fn, bubble) {
         if ("removeEventListener" in el) {
           try {
@@ -87,7 +87,7 @@
           }
         }
       },
-    
+
       getChildren = function (e) {
         if (e.children.length < 1) {
           throw new Error("The Nav container has no containing elements");
@@ -102,20 +102,20 @@
         }
         return children;
       },
-    
+
       setAttributes = function (el, attrs) {
         for (var key in attrs) {
           el.setAttribute(key, attrs[key]);
         }
       },
-    
+
       addClass = function (el, cls) {
         if (el.className.indexOf(cls) !== 0) {
           el.className += " " + cls;
           el.className = el.className.replace(/(^\s*)|(\s*$)/g,"");
         }
       },
-    
+
       removeClass = function (el, cls) {
         var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
         el.className = el.className.replace(reg, " ").replace(/(^\s*)|(\s*$)/g,"");
@@ -136,7 +136,7 @@
         // Default options
         this.options = {
           animate: true,                    // Boolean: Use CSS3 transitions, true or false
-          transition: 250,                  // Integer: Speed of the transition, in milliseconds
+          transition: 284,                  // Integer: Speed of the transition, in milliseconds
           label: "Menu",                    // String: Label for the navigation toggle
           insert: "before",                 // String: Insert the toggle before or after the navigation
           customToggle: "",                 // Selector: Specify the ID of a custom toggle

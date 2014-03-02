@@ -27,8 +27,7 @@
     var navigation = responsiveNav(".nav-collapse", {
 
       // Close the navigation when it's tapped
-      closeOnNavClick: true,
-      transition: 300
+      closeOnNavClick: true
     });
 
     // Create a Mask
