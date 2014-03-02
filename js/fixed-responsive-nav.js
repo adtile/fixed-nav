@@ -95,7 +95,8 @@
     }, false);
 
     // Close navigation when tapping the mask under it
-    mask.addEventListener("click", function () {
+    mask.addEventListener("click", function (e) {
+      e.preventDefault();
       navigation.close();
     }, false);
 
@@ -107,7 +108,8 @@
     };
 
     // Select the right navigation item when tapping the logo
-    document.querySelector(".logo").addEventListener("click", function () {
+    document.querySelector(".logo").addEventListener("click", function (e) {
+      e.preventDefault();
       wasNavigationTapped = true;
 
       // Select first navigation item
@@ -128,11 +130,7 @@
     // When a navigation item is tapped, select it and begin scrolling
     [].forEach.call(links, function (el, i) {
       links[i].addEventListener("click", function (e) {
-
-        // Prevent default functionality
         e.preventDefault();
-
-        // Navigation was tapped, set flag to true
         wasNavigationTapped = true;
 
         // Select right navigation item (we are passing which one to select "i")
