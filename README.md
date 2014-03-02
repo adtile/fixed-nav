@@ -6,6 +6,8 @@ To see the source code, open up [fixed-responsive-nav.js](https://github.com/adt
 
 You are free to use the JavaScript, styles and the icon fonts provided here in your own project. Commercial or non-commercial.
 
+
+
 # Features
 
 * Fixed positioned, always visible navigation bar
@@ -19,10 +21,14 @@ You are free to use the JavaScript, styles and the icon fonts provided here in y
 * Tapping a link changes the URL, so you can still copy/paste it and link to different sections
 * Built progressive enhancement in mind
 
+
+
 # Live example
 
 * There’s a live example here, take a look: [http://www.adtile.me/fixed-nav/](http://www.adtile.me/fixed-nav/)
 * Alternatively, you can also try the navigation [on our site](http://www.adtile.me/) which uses similar approach
+
+
 
 # Working on the project
 
