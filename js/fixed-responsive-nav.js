@@ -103,7 +103,7 @@
       }, 500);
     };
 
-    // Select the right navigation item when clicking the logo
+    // Select the right navigation item when tapping the logo
     document.querySelector(".logo").addEventListener("click", function () {
       wasNavigationTapped = true;
 
