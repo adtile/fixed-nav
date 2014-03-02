@@ -1,6 +1,6 @@
 # Fixed Responsive Nav
 
-### Responsive, fixed and touch friendly one page navigation, using [Responsive Nav](http://responsive-nav.com/), smooth animated scrolling & Vanilla JavaScript. Similar to the solution we are using on [Adtile’s site](http://www.adtile.me/).
+### Responsive, fixed and touch friendly one page navigation, using [Responsive Nav](http://responsive-nav.com/), smooth animated scrolling & vanilla JavaScript. Similar to the solution we are using on [Adtile’s site](http://www.adtile.me/).
 
 You are free to use the JavaScript, styles and the icon fonts provided here in your own project. Commercial or non-commercial.
 
@@ -16,7 +16,7 @@ To view the source code, open up [fixed-responsive-nav.js](https://github.com/ad
 * Auto highlights current location
 * Uses a tiny custom font for icons (only two characters included)
 * Closes the navigation when user tap's outside of it
-* Clicking a link changes the URL, so you can still copy/paste it and link to different sections
+* Tapping a link changes the URL, so you can still copy/paste it and link to different sections
 * Built progressive enhancement in mind
 
 # Working on the project
