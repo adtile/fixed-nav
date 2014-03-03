@@ -1,4 +1,4 @@
-/*! responsive-nav.js 1.0.30
+/*! responsive-nav.js 1.0.31
  * https://github.com/viljamis/responsive-nav.js
  * http://responsive-nav.com
  *
@@ -470,7 +470,7 @@
         for (var i = 0; i < nav.inner.length; i++) {
           savedHeight += nav.inner[i].offsetHeight;
         }
-        var innerStyles = "." + opts.navClass + "-" + this.index + ".opened{max-height:" + savedHeight + "px !important}";
+        var innerStyles = "." + opts.jsClass + " ." + opts.navClass + "-" + this.index + ".opened{max-height:" + savedHeight + "px !important}";
 
         if (styleElement.styleSheet) {
           styleElement.styleSheet.cssText = innerStyles;
