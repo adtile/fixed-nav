@@ -15,7 +15,14 @@
   "use strict";
 
   // Feature test to rule out some older browsers
-  if ("querySelector" in document && "addEventListener" in window && Array.prototype.forEach) {
+  if ("querySelector" in document && "addEventListener" in window) {
+
+    // forEach method, that passes back the stuff we need
+    var forEach = function (array, callback, scope) {
+      for (var i = 0; i < array.length; i++) {
+        callback.call(scope, i, array[i]);
+      }
+    };
 
     // Attach FastClick to remove the 300ms tap delay
     FastClick.attach(document.body);
@@ -52,7 +59,7 @@
     // Set up an array of locations which we store in "content"
     var setupLocations = function () {
       content = [];
-      [].forEach.call(links, function (el, i) {
+      forEach(links, function (i, el) {
         var href = links[i].getAttribute("href").replace("#", "");
         content.push(document.getElementById(href).offsetTop + 200);
       });
@@ -68,7 +75,7 @@
 
     // Highlight active link on the navigation
     var selectActiveMenuItem = function (i) {
-      [].forEach.call(links, function (el, i) {
+      forEach(links, function (i, el) {
         links[i].parentNode.className = "";
       });
       links[i].parentNode.className = "active";
@@ -85,7 +92,7 @@
 
       // For each content link, when it's in viewport, highlight it
       if (!wasNavigationTapped) {
-        [].forEach.call(content, function (loc, i) {
+        forEach(content, function (i, loc) {
           if ((loc > top && (loc < top + 300 || (top + viewport) >= bodyheight))) {
             selectActiveMenuItem(i);
           }
@@ -127,7 +134,7 @@
     }, false);
 
     // When a navigation item is tapped, select it and begin scrolling
-    [].forEach.call(links, function (el, i) {
+    forEach(links, function (i, el) {
       links[i].addEventListener("click", function (e) {
         e.preventDefault();
         wasNavigationTapped = true;
