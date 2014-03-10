@@ -105,13 +105,19 @@ body {
 
 section {
   border-bottom: 1px solid #999;
+  text-align: center;
   padding: 100px 0 0;
   height: 800px;
   width: 100%;
 }
 
 h1 {
-  text-align: center;
+  margin-bottom: .5em;
+}
+
+p {
+  width: 90%;
+  margin: 0 auto;
 }
 
 
