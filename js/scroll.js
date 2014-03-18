@@ -1,6 +1,6 @@
 /* =============================================================
 
-  Smooth Scroll v4.2
+  Smooth Scroll v4.4
   Animate scrolling to anchor links, by Chris Ferdinandi.
   http://gomakethings.com
 
@@ -9,6 +9,9 @@
 
   Free to use under the MIT License.
   http://gomakethings.com/mit/
+
+  p.s. This is a custom build for Fixed Nav, ask @adtileHQ for
+  any changes made into this build
 
  * ============================================================= */
 
@@ -121,8 +124,7 @@ window.smoothScroll = (function (window, document, undefined) {
     var updateURL = overrides.updateURL || options.updateURL;
 
     // Selectors and variables
-    var fixedHeader = document.querySelector('[data-scroll-header]'); // Get the fixed header
-    var headerHeight = fixedHeader === null ? 0 : (fixedHeader.offsetHeight + fixedHeader.offsetTop); // Get the height of a fixed header if one exists
+    var headerHeight = 55;
     var startLocation = window.pageYOffset; // Current location on the page
     var endLocation = _getEndLocation( document.querySelector(anchor), headerHeight ); // Scroll to location
     var animationInterval; // interval timer
@@ -141,11 +143,11 @@ window.smoothScroll = (function (window, document, undefined) {
     // Stop the scroll animation when it reaches its target (or the bottom/top of page)
     // Private method
     // Runs functions
-    var _stopAnimateScroll = function () {
+    var _stopAnimateScroll = function (position, endLocation, animationInterval) {
       var currentLocation = window.pageYOffset;
       if ( position == endLocation || currentLocation == endLocation || ( (window.innerHeight + currentLocation) >= document.body.scrollHeight ) ) {
         clearInterval(animationInterval);
-        options.callbackAfter(); // Run callbacks after animation complete
+        options.callbackAfter( toggle, anchor ); // Run callbacks after animation complete
       }
     };
 
@@ -165,9 +167,15 @@ window.smoothScroll = (function (window, document, undefined) {
     // Private method
     // Runs functions
     var _startAnimateScroll = function () {
-      options.callbackBefore(); // Run callbacks before animating scroll
+      options.callbackBefore( toggle, anchor ); // Run callbacks before animating scroll
       animationInterval = setInterval(_loopAnimateScroll, 16);
     };
+
+    // Reset position to fix weird iOS bug
+    // https://github.com/cferdinandi/smooth-scroll/issues/45
+    if ( window.pageYOffset === 0 ) {
+      window.scrollTo( 0, 0 );
+    }
 
     // Start scrolling animation
     _startAnimateScroll();
