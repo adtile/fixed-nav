@@ -87,8 +87,16 @@
 
       // Determine viewport and body size
       var top = window.pageYOffset,
-        bodyheight = document.body.offsetHeight,
-        viewport = window.innerHeight;
+        body = document.body,
+        html = document.documentElement,
+        viewport = window.innerHeight,
+        bodyheight = Math.max(
+          body.scrollHeight,
+          body.offsetHeight,
+          html.clientHeight,
+          html.scrollHeight,
+          html.offsetHeight
+        );
 
       // For each content link, when it's in viewport, highlight it
       if (!wasNavigationTapped) {
