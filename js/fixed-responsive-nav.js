@@ -76,9 +76,9 @@
     // Highlight active link on the navigation
     var selectActiveMenuItem = function (i) {
       forEach(links, function (i, el) {
-        links[i].parentNode.className = "";
+        links[i].parentNode.className = links[i].parentNode.className.replace(/[\s]{0,}active/, '');
       });
-      links[i].parentNode.className = "active";
+      links[i].parentNode.className += links[i].parentNode.className ? " active" : "active";
     };
 
     // Highlight active link when scrolling
