@@ -1,0 +1,32 @@
+{
+  "name": "fixed-nav",
+  "version": "1.0.0",
+  "description": "Responsive, fixed and touch friendly one page navigation, using Responsive Nav, smooth animated scrolling & vanilla JavaScript. Similar to the solution we are using on Adtile’s site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adtile/fixed-nav.git"
+  },
+  "keywords": [
+    "fixednav",
+    "fixed",
+    "nav",
+    "responsive",
+    "javascript",
+    "navbar",
+    "spa",
+    "one",
+    "page",
+    "navigation",
+    "adtile"
+  ],
+  "author": "Adtile Technologies Incorporated.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adtile/fixed-nav/issues"
+  },
+  "homepage": "https://github.com/adtile/fixed-nav#readme"
+}
