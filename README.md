@@ -20,8 +20,16 @@ You are free to use the JavaScript, styles and the icon fonts provided here in y
 * Closes the navigation when user tap's outside of it
 * Tapping a link changes the URL, so you can still copy/paste it and link to different sections
 * Built progressive enhancement in mind
+* Allows external links
 
+##External Links
 
+To allow external links, add the attribute `data-external-link` to the anchor element and remove `data-scroll`.
+
+```
+<a href="not-an-id" data-external-link>external link</a>
+<a href="#normal-link" data-scroll>normal link</a>
+```
 
 # Live example
 
