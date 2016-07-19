@@ -51,7 +51,7 @@
 
     // Find navigation links and save a reference to them
     var nav = document.querySelector(".nav-collapse ul"),
-      links = nav.querySelectorAll("a");
+      links = nav.querySelectorAll("a:not([data-external-link])");
 
     // "content" will store all the location cordinates
     var content;
