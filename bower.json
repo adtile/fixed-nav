@@ -1,0 +1,35 @@
+{
+  "name": "fixed-nav",
+  "version": "0.0.0",
+  "homepage": "https://github.com/adtile/fixed-nav",
+  "authors": [
+    "Adtile, Inc. <developers@adtile.me>"
+  ],
+  "description": "Responsive, fixed and touch friendly one page navigation, using vanilla javascript.",
+  "main": [
+    "css/styles.css",
+    "css/ie.css",
+    "js/fastclick.js",
+    "js/fixed-responsive-nav.js",
+    "js/responsive-nav.js",
+    "js/scroll.js",
+    "icons/responsivenav.eot",
+    "icons/responsivenav.svg",
+    "icons/responsivenav.ttf",
+    "icons/responsivenav.woff"
+  ],
+  "keywords": [
+    "fixed",
+    "responsive",
+    "nav",
+    "adtile"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
