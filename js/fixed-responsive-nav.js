@@ -106,6 +106,9 @@
           }
         });
       }
+      
+      // Close navigation when scrolling
+      navigation.close();
     }, false);
 
     // Close navigation when tapping the mask under it
