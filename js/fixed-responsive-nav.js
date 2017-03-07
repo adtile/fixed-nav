@@ -171,6 +171,38 @@
         clearTapCheck();
       }, false);
     });
+        
+    // Make header fixed when scrolling down for long lists
+    var pastTop = window.pageYOffset;
+    window.addEventListener("scroll", function() {
+      
+      // Determine current positions and if the scroll was up
+      var top = window.pageYOffset,
+        header = document.querySelector("header"),
+        headerTop = header.style.top.slice(0,header.style.top.length-2),
+        scrollDown = top > pastTop;
+          
+      // Check if navigation is open          
+      if (document.querySelector(".opened")) {
+        // If scrolling down, make header absolute at current top position
+        if (scrollDown && header.style.position != "absolute") {
+          header.style.position = "absolute";
+          header.style.top = top + "px";
+        }
+        // Else if scrolling up above current top position, make header fixed
+        else if (header.style.position && top < headerTop) {
+          header.style = null;
+        }
+      }
+      
+      // When navigation is closed, reset back to default
+      if (document.querySelector(".closed")) {
+        header.style = null;
+      }
+      
+      // Sets new past top used to determine if scrolling down or up for next scroll
+      pastTop = top;
+    }, false);
 
   }
 
