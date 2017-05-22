@@ -60,8 +60,11 @@
     var setupLocations = function () {
       content = [];
       forEach(links, function (i, el) {
-        var href = links[i].getAttribute("href").replace("#", "");
-        content.push(document.getElementById(href).offsetTop + 200);
+        var id = links[i].getAttribute("href");
+        var elem = document.querySelector(id);
+        if(elem != null) {
+          content.push(elem.offsetTop + 200);
+        }
       });
     };
 
